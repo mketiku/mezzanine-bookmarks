@@ -7,7 +7,7 @@ from bookmarks.models import Bookmark, Page
 
 
 class BookmarkForm(forms.ModelForm):
-    url = forms.URLField(label="URL", verify_exists=False, widget=forms.TextInput(attrs={"size": 40}))
+    url = forms.URLField(label="URL", widget=forms.TextInput(attrs={"size": 40}))
     title = forms.CharField(max_length=100, widget=forms.TextInput(attrs={"size": 40}))
     keywords = forms.CharField(max_length=100, widget=forms.TextInput(attrs={"size": 40}))
     content = forms.Textarea()

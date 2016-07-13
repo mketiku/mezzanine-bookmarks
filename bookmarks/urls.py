@@ -1,5 +1,4 @@
-from django.conf.urls.defaults import url, patterns
-
+from django.conf.urls import include, url, patterns
 
 urlpatterns = patterns("",
     url(r"^$", "bookmarks.views.bookmarks", name="all_bookmarks"),
